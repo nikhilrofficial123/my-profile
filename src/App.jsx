@@ -132,7 +132,7 @@ function App() {
         'CSV import for bulk trade transactions & live portfolio analytics dashboard'
       ],
       icon: <Layers className="w-8 h-8" />,
-      github: 'https://github.com/nikhilroule',
+      github: 'https://github.com/nikhilrofficial123',
       demo: '#'
     },
     {
@@ -147,7 +147,7 @@ function App() {
         'Relational MySQL / Firebase data architecture for high performance'
       ],
       icon: <BookOpen className="w-8 h-8" />,
-      github: 'https://github.com/nikhilroule',
+      github: 'https://github.com/nikhilrofficial123',
       demo: '#'
     },
     {
@@ -162,7 +162,7 @@ function App() {
         'Mobile dashboard interface with custom Blynk cloud widgets'
       ],
       icon: <Cpu className="w-8 h-8" />,
-      github: 'https://github.com/nikhilroule',
+      github: 'https://github.com/nikhilrofficial123',
       demo: '#'
     }
   ];
