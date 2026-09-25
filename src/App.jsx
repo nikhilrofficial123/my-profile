@@ -815,7 +815,7 @@ function App() {
                 <h2 style={{ fontSize: '2rem', fontWeight: 800, color: '#fff' }}>NIKHIL ROULE</h2>
                 <p style={{ color: '#94a3b8', fontSize: '0.95rem' }}>
                   Chhatrapati Sambhajinagar, Maharashtra — 431003<br />
-                  Email: nikhilrofficial123@gmail.com | Phone: +91-9823396702<br />
+                  Email: nikhilrofficial123@gmail.com<br />
                   LinkedIn: https://www.linkedin.com/in/nikhil-roule-4a61a8318/
                 </p>
               </div>
