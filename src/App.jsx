@@ -678,14 +678,6 @@ function App() {
                   </div>
                 </a>
 
-                <a href="tel:+919823396702" className="glass-card info-card">
-                  <div className="info-icon"><Phone size={22} /></div>
-                  <div>
-                    <span className="info-label">Phone</span>
-                    <div className="info-value">+91 9823396702</div>
-                  </div>
-                </a>
-
                 <a href="https://www.linkedin.com/in/nikhil-roule-4a61a8318/" target="_blank" rel="noreferrer" className="glass-card info-card">
                   <div className="info-icon"><LinkedinIcon size={22} /></div>
                   <div>
