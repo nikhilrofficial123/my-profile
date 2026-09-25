@@ -678,6 +678,14 @@ function App() {
                   </div>
                 </a>
 
+                <a href="https://github.com/nikhilrofficial123" target="_blank" rel="noreferrer" className="glass-card info-card">
+                  <div className="info-icon"><GithubIcon size={22} /></div>
+                  <div>
+                    <span className="info-label">GitHub</span>
+                    <div className="info-value">github.com/nikhilrofficial123</div>
+                  </div>
+                </a>
+
                 <a href="https://www.linkedin.com/in/nikhil-roule-4a61a8318/" target="_blank" rel="noreferrer" className="glass-card info-card">
                   <div className="info-icon"><LinkedinIcon size={22} /></div>
                   <div>
@@ -784,7 +792,7 @@ function App() {
           </p>
 
           <div style={{ display: 'flex', gap: '16px' }}>
-            <a href="https://github.com/nikhilroule" target="_blank" rel="noreferrer" style={{ color: '#94a3b8' }}><GithubIcon size={20} /></a>
+            <a href="https://github.com/nikhilrofficial123" target="_blank" rel="noreferrer" style={{ color: '#94a3b8' }}><GithubIcon size={20} /></a>
             <a href="https://www.linkedin.com/in/nikhil-roule-4a61a8318/" target="_blank" rel="noreferrer" style={{ color: '#94a3b8' }}><LinkedinIcon size={20} /></a>
             <a href="mailto:nikhilrofficial123@gmail.com" style={{ color: '#94a3b8' }}><Mail size={20} /></a>
           </div>
