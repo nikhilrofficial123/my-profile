@@ -127,8 +127,9 @@ function App() {
           access_key: '055501da-0892-408a-b13c-1d6d8e701f7d', // Web3Forms access key for nikhilrofficial123@gmail.com
           name: formData.name,
           email: formData.email,
-          subject: formData.subject || `New Portfolio Message from ${formData.name}`,
+          "Subject": formData.subject || 'General Inquiry / Contact',
           message: formData.message,
+          subject: formData.subject ? `[Portfolio] ${formData.subject}` : `New Portfolio Message from ${formData.name}`,
           from_name: formData.name
         })
       });
