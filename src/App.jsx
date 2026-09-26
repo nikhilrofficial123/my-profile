@@ -288,10 +288,10 @@ function App() {
                 <div className="avatar-glow-ring">
                   <img src={profileImg} alt="Nikhil Roule Profile" className="avatar-img" />
                 </div>
-                <div className="avatar-status-badge">
+                <a href="#contact" className="avatar-status-badge" title="Click to send a message">
                   <span className="status-dot"></span>
                   Available for Hire
-                </div>
+                </a>
               </div>
 
               {/* Right Column: Hero Headline, Tagline, Bio & Action Buttons */}
