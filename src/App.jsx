@@ -111,6 +111,21 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Smooth scroll to contact section and focus Name input field
+  const handleHireClick = (e) => {
+    e.preventDefault();
+    const contactSection = document.getElementById('contact');
+    const nameInput = document.getElementById('name');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (nameInput) {
+      setTimeout(() => {
+        nameInput.focus();
+      }, 450);
+    }
+  };
+
   // --------------------------------------------------------------------------
   // CONTACT FORM SUBMISSION HANDLER
   // Sends user message asynchronously using Web3Forms endpoint
