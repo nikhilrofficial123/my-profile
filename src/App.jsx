@@ -555,7 +555,10 @@ function App() {
           </div>
         </section>
 
-        {/* SKILLS SECTION */}
+        {/* ==================================================================== */}
+        {/* TECHNICAL SKILLS & PROFICIENCY SECTION                               */}
+        {/* Categorized breakdown of languages, web tech, backend, IoT & tools   */}
+        {/* ==================================================================== */}
         <section id="skills" className="section">
           <div className="content-wrapper">
             <div className="section-header">
@@ -565,6 +568,7 @@ function App() {
             </div>
 
             <div className="skills-grid">
+              {/* Category 1: Programming Languages */}
               <div className="glass-card skill-card">
                 <h3 className="skill-category-title"><Terminal className="text-secondary" /> Programming Languages</h3>
                 <div className="skill-tags">
@@ -577,6 +581,7 @@ function App() {
                 </div>
               </div>
 
+              {/* Category 2: Web Technologies */}
               <div className="glass-card skill-card">
                 <h3 className="skill-category-title"><Globe className="text-secondary" /> Web Technologies</h3>
                 <div className="skill-tags">
@@ -588,6 +593,7 @@ function App() {
                 </div>
               </div>
 
+              {/* Category 3: Backend & Databases */}
               <div className="glass-card skill-card">
                 <h3 className="skill-category-title"><Database className="text-secondary" /> Backend & Database</h3>
                 <div className="skill-tags">
@@ -599,6 +605,7 @@ function App() {
                 </div>
               </div>
 
+              {/* Category 4: Tools & Hardware Controllers */}
               <div className="glass-card skill-card">
                 <h3 className="skill-category-title"><Cpu className="text-secondary" /> Tools & Hardware</h3>
                 <div className="skill-tags">
@@ -610,6 +617,7 @@ function App() {
                 </div>
               </div>
 
+              {/* Category 5: Professional & Soft Skills */}
               <div className="glass-card skill-card" style={{ gridColumn: 'span 1 / -1' }}>
                 <h3 className="skill-category-title"><Sparkles className="text-secondary" /> Professional & Soft Skills</h3>
                 <div className="skill-tags">
@@ -626,7 +634,10 @@ function App() {
           </div>
         </section>
 
-        {/* EDUCATION SECTION */}
+        {/* ==================================================================== */}
+        {/* ACADEMIC EDUCATION SECTION                                           */}
+        {/* Academic progression: B.Tech (MGM Univ), HSC (12th), SSC (10th)       */}
+        {/* ==================================================================== */}
         <section id="education" className="section">
           <div className="content-wrapper">
             <div className="section-header">
@@ -700,7 +711,10 @@ function App() {
           </div>
         </section>
 
-        {/* CONTACT SECTION */}
+        {/* ==================================================================== */}
+        {/* CONTACT SECTION                                                      */}
+        {/* Direct communication cards & Web3Forms interactive email form        */}
+        {/* ==================================================================== */}
         <section id="contact" className="section">
           <div className="content-wrapper">
             <div className="section-header">
@@ -710,6 +724,7 @@ function App() {
             </div>
 
             <div className="contact-grid">
+              {/* Direct Info Cards (Email, GitHub, LinkedIn, Location) */}
               <div className="contact-info-cards">
                 <a href="mailto:nikhilrofficial123@gmail.com" className="glass-card info-card">
                   <div className="info-icon"><Mail size={22} /></div>
@@ -744,7 +759,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Contact Form */}
+              {/* Interactive Glassmorphic Contact Form */}
               <div className="glass-card">
                 <form className="contact-form" onSubmit={handleFormSubmit}>
                   <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.3rem', fontWeight: 700 }}>Send a Message</h3>
