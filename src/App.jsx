@@ -428,7 +428,10 @@ function App() {
           </div>
         </section>
 
-        {/* EXPERIENCE SECTION */}
+        {/* ==================================================================== */}
+        {/* INTERNSHIPS & WORK EXPERIENCE SECTION                                */}
+        {/* Timeline of internships: BSERC Def-Space and Intern Alpha IoT        */}
+        {/* ==================================================================== */}
         <section id="experience" className="section">
           <div className="content-wrapper">
             <div className="section-header">
@@ -437,7 +440,9 @@ function App() {
               <p className="section-desc">Hands-on experience in space technologies and IoT embedded development.</p>
             </div>
 
+            {/* Experience Timeline Stream */}
             <div className="timeline">
+              {/* Internship 1: Def-Space at BSERC */}
               <div className="glass-card timeline-card">
                 <div className="timeline-header">
                   <div>
@@ -464,6 +469,7 @@ function App() {
                 </div>
               </div>
 
+              {/* Internship 2: IoT Intern at Intern Alpha */}
               <div className="glass-card timeline-card">
                 <div className="timeline-header">
                   <div>
@@ -494,7 +500,10 @@ function App() {
           </div>
         </section>
 
-        {/* FEATURED PROJECTS SECTION */}
+        {/* ==================================================================== */}
+        {/* FEATURED PROJECTS SECTION                                            */}
+        {/* Category-filtered showcase grid of web, full-stack, & IoT projects  */}
+        {/* ==================================================================== */}
         <section id="projects" className="section">
           <div className="content-wrapper">
             <div className="section-header">
