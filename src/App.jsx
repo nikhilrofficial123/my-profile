@@ -306,7 +306,7 @@ function App() {
                 <div className="avatar-glow-ring">
                   <img src={profileImg} alt="Nikhil Roule Profile" className="avatar-img" />
                 </div>
-                <a href="#contact" className="avatar-status-badge" title="Click to send a message">
+                <a href="#contact" onClick={handleHireClick} className="avatar-status-badge" title="Click to send a message">
                   <span className="status-dot"></span>
                   Available for Hire
                 </a>
