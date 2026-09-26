@@ -1,3 +1,9 @@
+// ============================================================================
+// NIKHIL ROULE — PERSONAL PORTFOLIO APPLICATION (React.js)
+// Comprehensive full-stack & IoT developer portfolio with dynamic theme toggle,
+// section scroll-spy, project filtering, contact form, and resume preview modal.
+// ============================================================================
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import profileImg from './assets/profile.jpg';
@@ -29,6 +35,10 @@ import {
   Moon
 } from 'lucide-react';
 
+// ----------------------------------------------------------------------------
+// CUSTOM SVG ICON COMPONENTS
+// Reusable inline SVG icons for GitHub and LinkedIn for precise vector rendering
+// ----------------------------------------------------------------------------
 const GithubIcon = ({ size = 20, color = 'currentColor' }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
@@ -45,28 +55,37 @@ const LinkedinIcon = ({ size = 20, color = 'currentColor' }) => (
 );
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [projectFilter, setProjectFilter] = useState('all');
-  const [showResumeModal, setShowResumeModal] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  // --------------------------------------------------------------------------
+  // STATE MANAGEMENT
+  // --------------------------------------------------------------------------
+  const [activeSection, setActiveSection] = useState('home'); // Currently visible section for scroll-spy highlighting
+  const [scrolled, setScrolled] = useState(false);            // Controls navbar background styling on scroll (> 40px)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Controls mobile navigation drawer visibility
+  const [projectFilter, setProjectFilter] = useState('all');  // Active category filter for projects ('all', 'fullstack', 'web', 'iot')
+  const [showResumeModal, setShowResumeModal] = useState(false); // Controls full resume preview modal popup
+  const [formSubmitted, setFormSubmitted] = useState(false); // Displays success message after contact form submission
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' }); // Controlled contact form inputs
 
+  // Theme preference persisted in localStorage ('light' or 'dark')
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || 'light';
   });
 
+  // Apply data-theme attribute on <html> element whenever theme changes
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
 
+  // Toggle between dark mode and light mode
   const toggleTheme = () => {
     setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
   };
 
-  // Handle scroll listener
+  // --------------------------------------------------------------------------
+  // SCROLL-SPY & NAVBAR SCROLL EFFECT
+  // Tracks scroll position to activate sticky header styles & highlight active nav links
+  // --------------------------------------------------------------------------
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
@@ -91,6 +110,10 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // --------------------------------------------------------------------------
+  // CONTACT FORM SUBMISSION HANDLER
+  // Sends user message asynchronously using Web3Forms endpoint
+  // --------------------------------------------------------------------------
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
@@ -100,7 +123,7 @@ function App() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
-          access_key: 'b1704e54-52d3-4638-963d-4c3e8006e8b4', // Free Web3Forms key
+          access_key: 'b1704e54-52d3-4638-963d-4c3e8006e8b4', // Web3Forms integration key
           name: formData.name,
           email: formData.email,
           subject: formData.subject || `New Portfolio Message from ${formData.name}`,
@@ -119,6 +142,10 @@ function App() {
     }, 4000);
   };
 
+  // --------------------------------------------------------------------------
+  // PORTFOLIO PROJECTS CATALOG DATA
+  // Structured database of featured projects displayed in the Projects section
+  // --------------------------------------------------------------------------
   const projects = [
     {
       id: 'nr-wealth',
