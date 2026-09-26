@@ -137,11 +137,13 @@
   position: relative;
 }
 
+.hero-main-row,
 .hero-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 48px;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 .hero-badge {
@@ -176,14 +178,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin-bottom: 40px;
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  padding-top: 24px;
+  gap: 24px;
+  padding-top: 32px;
   border-top: 1px solid var(--border-color);
 }
 
@@ -747,6 +748,7 @@
     padding: 110px 0 60px 0;
   }
 
+  .hero-main-row,
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
