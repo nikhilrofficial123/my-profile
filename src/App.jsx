@@ -120,20 +120,22 @@ function App() {
     if (!formData.name || !formData.email || !formData.message) return;
 
     try {
-      await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
-          access_key: 'b1704e54-52d3-4638-963d-4c3e8006e8b4', // Web3Forms integration key
+          access_key: 'b1704e54-52d3-4638-963d-4c3e8006e8b4', // Web3Forms access key
           name: formData.name,
           email: formData.email,
           subject: formData.subject || `New Portfolio Message from ${formData.name}`,
           message: formData.message,
-          to_email: 'nikhilrofficial123@gmail.com'
+          from_name: formData.name
         })
       });
+      const data = await res.json();
+      console.log('Web3Forms Response:', data);
     } catch (err) {
-      console.log('Form submission completed with email trigger');
+      console.error('Form submission error:', err);
     }
 
     setFormSubmitted(true);
