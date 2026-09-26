@@ -200,13 +200,17 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Sticky Navigation Bar */}
+      {/* ==================================================================== */}
+      {/* HEADER NAVIGATION BAR (Sticky glassmorphic navbar with theme toggle)  */}
+      {/* ==================================================================== */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="content-wrapper nav-container">
+          {/* Brand Logo */}
           <a href="#home" className="logo">
             NR<span className="logo-dot">.</span>
           </a>
 
+          {/* Desktop Navigation Links with active section scroll-spy indicator */}
           <ul className="nav-links">
             <li><a href="#about" className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>About</a></li>
             <li><a href="#experience" className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}>Experience</a></li>
@@ -216,6 +220,7 @@ function App() {
             <li><a href="#contact" className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}>Contact</a></li>
           </ul>
 
+          {/* Header Controls: Theme toggle, Resume Modal trigger, Contact CTA & Mobile Menu Button */}
           <div className="nav-actions">
             <button
               onClick={toggleTheme}
@@ -240,7 +245,7 @@ function App() {
           </div>
         </div>
 
-        {/* Mobile Navigation Drawer */}
+        {/* Mobile Navigation Drawer Overlay */}
         {mobileMenuOpen && (
           <div className="mobile-nav">
             <a href="#about" onClick={() => setMobileMenuOpen(false)} className="nav-link">About Me</a>
@@ -269,10 +274,14 @@ function App() {
       </nav>
 
       <main className="main-content">
-        {/* HERO SECTION */}
+        {/* ==================================================================== */}
+        {/* HERO SECTION                                                         */}
+        {/* Layout: Profile photo positioned on the Left, Text content on Right   */}
+        {/* ==================================================================== */}
         <section id="home" className="hero-section">
           <div className="content-wrapper">
             <div className="hero-grid">
+              {/* Left Column: Avatar image in animated glowing border */}
               <div className="hero-avatar-wrapper">
                 <div className="avatar-glow-ring">
                   <img src={profileImg} alt="Nikhil Roule Profile" className="avatar-img" />
@@ -283,6 +292,7 @@ function App() {
                 </div>
               </div>
 
+              {/* Right Column: Hero Headline, Tagline, Bio & Action Buttons */}
               <div className="hero-text">
                 <h1 className="hero-subtitle">
                   Hi, I'm <strong>Nikhil Roule</strong> — B.Tech Computer Science & Engineering Student at MGM University.
@@ -292,6 +302,7 @@ function App() {
                   Passionate Full-Stack Developer and IoT Engineer with hands-on experience in React.js, TypeScript, Go, Firebase, and embedded hardware controllers (ESP8266). Focused on engineering performant, secure, and user-friendly digital solutions.
                 </p>
 
+                {/* Call-to-action Action Buttons */}
                 <div className="hero-actions">
                   <a href="#projects" className="btn-primary">
                     Explore Projects <ArrowUpRight size={18} />
@@ -304,6 +315,7 @@ function App() {
                   </button>
                 </div>
 
+                {/* Achievement Statistics Counter Grid */}
                 <div className="stats-grid">
                   <div className="stat-item">
                     <span className="stat-number gradient-text">3+</span>
@@ -327,7 +339,10 @@ function App() {
           </div>
         </section>
 
-        {/* ABOUT ME SECTION */}
+        {/* ==================================================================== */}
+        {/* ABOUT ME SECTION                                                     */}
+        {/* Profile overview, technical specialization focus & languages spoken  */}
+        {/* ==================================================================== */}
         <section id="about" className="section">
           <div className="content-wrapper">
             <div className="section-header">
