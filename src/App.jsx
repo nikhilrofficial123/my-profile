@@ -7,6 +7,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import profileImg from './assets/profile.jpg';
+import logoImg from './assets/logo.png';
 import {
   Mail,
   Phone,
