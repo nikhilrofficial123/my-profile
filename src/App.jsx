@@ -111,18 +111,31 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Smooth scroll to contact section and focus Name input field
+  // Smooth scroll to contact section and focus Name input field (Cross-platform PC & Mobile)
   const handleHireClick = (e) => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
     const nameInput = document.getElementById('name');
+
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      const navOffset = 70;
+      const elementPosition = contactSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
+
     if (nameInput) {
       setTimeout(() => {
-        nameInput.focus();
-      }, 450);
+        try {
+          nameInput.focus({ preventScroll: true });
+        } catch (err) {
+          nameInput.focus();
+        }
+      }, 650);
     }
   };
 
