@@ -246,16 +246,6 @@ function App() {
         <section id="home" className="hero-section">
           <div className="content-wrapper">
             <div className="hero-grid">
-              <div className="hero-avatar-wrapper">
-                <div className="avatar-glow-ring">
-                  <img src={profileImg} alt="Nikhil Roule Profile" className="avatar-img" />
-                </div>
-                <div className="avatar-status-badge">
-                  <span className="status-dot"></span>
-                  Available for Hire
-                </div>
-              </div>
-
               <div className="hero-text">
                 <h1 className="hero-subtitle">
                   Hi, I'm <strong>Nikhil Roule</strong> — B.Tech Computer Science & Engineering Student at MGM University.
@@ -294,6 +284,16 @@ function App() {
                     <span className="stat-number gradient-text">2027</span>
                     <span className="stat-label">B.Tech Graduation</span>
                   </div>
+                </div>
+              </div>
+
+              <div className="hero-avatar-wrapper">
+                <div className="avatar-glow-ring">
+                  <img src={profileImg} alt="Nikhil Roule Profile" className="avatar-img" />
+                </div>
+                <div className="avatar-status-badge">
+                  <span className="status-dot"></span>
+                  Available for Hire
                 </div>
               </div>
             </div>
