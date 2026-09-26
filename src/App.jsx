@@ -835,7 +835,10 @@ function App() {
         </section>
       </main>
 
-      {/* FOOTER */}
+      {/* ==================================================================== */}
+      {/* FOOTER SECTION                                                       */}
+      {/* Copyright branding, site attribution & quick social links             */}
+      {/* ==================================================================== */}
       <footer className="footer">
         <div className="content-wrapper footer-container">
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -855,7 +858,10 @@ function App() {
         </div>
       </footer>
 
-      {/* RESUME PREVIEW MODAL */}
+      {/* ==================================================================== */}
+      {/* RESUME PREVIEW MODAL                                                 */}
+      {/* Interactive modal popup displaying full interactive resume preview   */}
+      {/* ==================================================================== */}
       {showResumeModal && (
         <div className="modal-overlay" onClick={() => setShowResumeModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
