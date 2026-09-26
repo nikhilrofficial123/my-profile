@@ -793,7 +793,7 @@ function App() {
               </div>
 
               {/* Interactive Glassmorphic Contact Form */}
-              <div className="glass-card">
+              <div id="send-message" className="glass-card">
                 <form className="contact-form" onSubmit={handleFormSubmit}>
                   <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.3rem', fontWeight: 700 }}>Send a Message</h3>
 
