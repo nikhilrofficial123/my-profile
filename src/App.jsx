@@ -276,11 +276,12 @@ function App() {
       <main className="main-content">
         {/* ==================================================================== */}
         {/* HERO SECTION                                                         */}
-        {/* Layout: Profile photo positioned on the Left, Text content on Right   */}
+        {/* Layout: Profile photo aligned with title down to action buttons      */}
         {/* ==================================================================== */}
         <section id="home" className="hero-section">
           <div className="content-wrapper">
-            <div className="hero-grid">
+            {/* Hero Main Row: Avatar (Left) & Intro Text Block (Right) */}
+            <div className="hero-main-row">
               {/* Left Column: Avatar image in animated glowing border */}
               <div className="hero-avatar-wrapper">
                 <div className="avatar-glow-ring">
@@ -314,26 +315,26 @@ function App() {
                     <FileText size={18} /> View Resume
                   </button>
                 </div>
+              </div>
+            </div>
 
-                {/* Achievement Statistics Counter Grid */}
-                <div className="stats-grid">
-                  <div className="stat-item">
-                    <span className="stat-number gradient-text">3+</span>
-                    <span className="stat-label">Major Projects</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-number gradient-text">2</span>
-                    <span className="stat-label">Internship Roles</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-number gradient-text">6+</span>
-                    <span className="stat-label">Tech Languages</span>
-                  </div>
-                  <div className="stat-item">
-                    <span className="stat-number gradient-text">2027</span>
-                    <span className="stat-label">B.Tech Graduation</span>
-                  </div>
-                </div>
+            {/* Achievement Statistics Counter Grid */}
+            <div className="stats-grid">
+              <div className="stat-item">
+                <span className="stat-number gradient-text">3+</span>
+                <span className="stat-label">Major Projects</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number gradient-text">2</span>
+                <span className="stat-label">Internship Roles</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number gradient-text">6+</span>
+                <span className="stat-label">Tech Languages</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-number gradient-text">2027</span>
+                <span className="stat-label">B.Tech Graduation</span>
               </div>
             </div>
           </div>
