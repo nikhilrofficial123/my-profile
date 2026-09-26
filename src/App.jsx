@@ -300,7 +300,7 @@ function App() {
                 </h1>
 
                 <p className="hero-description">
-                  Passionate Full-Stack Developer and IoT Engineer with hands-on experience in React.js, TypeScript, Go, Firebase, and embedded hardware controllers (ESP8266). Focused on engineering performant, secure, and user-friendly digital solutions.
+                  B.Tech Computer Science & Engineering student with hands-on experience in full-stack web development and IoT projects. Skilled in React.js, TypeScript, Firebase, Python, and SQL, with experience building portfolio management and library management applications. Seeking a software development internship to apply programming and problem-solving skills while contributing to real-world projects.
                 </p>
 
                 {/* Call-to-action Action Buttons */}
