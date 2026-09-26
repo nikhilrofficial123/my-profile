@@ -206,9 +206,9 @@ function App() {
       {/* ==================================================================== */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="content-wrapper nav-container">
-          {/* Brand Logo */}
+          {/* Brand Logo Image */}
           <a href="#home" className="logo">
-            NR<span className="logo-dot">.</span>
+            <img src={logoImg} alt="Nikhil Roule NR Logo" className="logo-img" />
           </a>
 
           {/* Desktop Navigation Links with active section scroll-spy indicator */}
@@ -843,7 +843,8 @@ function App() {
       {/* ==================================================================== */}
       <footer className="footer">
         <div className="content-wrapper footer-container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <img src={logoImg} alt="NR Logo" style={{ height: '32px', width: 'auto' }} />
             <span style={{ fontWeight: 800, fontSize: '1.2rem', fontFamily: 'var(--font-heading)' }}>Nikhil Roule</span>
             <span style={{ color: '#64748b' }}>| B.Tech CSE Portfolio</span>
           </div>
