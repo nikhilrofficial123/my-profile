@@ -111,15 +111,15 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Smooth scroll to contact section and focus Name input field (Cross-platform PC & Mobile)
+  // Smooth scroll to Send a Message form and focus Name input field (PC & Mobile)
   const handleHireClick = (e) => {
     e.preventDefault();
-    const contactSection = document.getElementById('contact');
+    const targetElement = document.getElementById('send-message') || document.getElementById('contact');
     const nameInput = document.getElementById('name');
 
-    if (contactSection) {
-      const navOffset = 70;
-      const elementPosition = contactSection.getBoundingClientRect().top;
+    if (targetElement) {
+      const navOffset = 80;
+      const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navOffset;
 
       window.scrollTo({
@@ -135,7 +135,7 @@ function App() {
         } catch (err) {
           nameInput.focus();
         }
-      }, 650);
+      }, 500);
     }
   };
 
