@@ -263,9 +263,19 @@
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-main);
+  text-decoration: none;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
   z-index: 10;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.avatar-status-badge:hover {
+  transform: translateY(-2px) scale(1.04);
+  border-color: var(--primary);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.4);
+  color: var(--text-main);
 }
 
 .status-dot {
