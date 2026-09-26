@@ -877,7 +877,7 @@ function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <img src={logoImg} alt="NR Logo" style={{ height: '32px', width: 'auto' }} />
             <span style={{ fontWeight: 800, fontSize: '1.2rem', fontFamily: 'var(--font-heading)' }}>Nikhil Roule</span>
-            <span style={{ color: '#64748b' }}>| B.Tech CSE Portfolio</span>
+            <span style={{ color: '#64748b' }}>| B.Tech Computer Science and Technology</span>
           </div>
 
           <p style={{ color: '#64748b', fontSize: '0.88rem' }}>
