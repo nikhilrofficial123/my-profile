@@ -190,10 +190,10 @@ function App() {
           </ul>
 
           <div className="nav-actions">
-            <button 
-              onClick={toggleTheme} 
-              className="theme-toggle-btn" 
-              aria-label="Toggle Theme" 
+            <button
+              onClick={toggleTheme}
+              className="theme-toggle-btn"
+              aria-label="Toggle Theme"
               title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             >
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
@@ -222,17 +222,17 @@ function App() {
             <a href="#skills" onClick={() => setMobileMenuOpen(false)} className="nav-link">Skills</a>
             <a href="#education" onClick={() => setMobileMenuOpen(false)} className="nav-link">Education</a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="nav-link">Contact</a>
-            
+
             <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-              <button 
-                onClick={toggleTheme} 
-                className="btn-outline" 
+              <button
+                onClick={toggleTheme}
+                className="btn-outline"
                 style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
               >
                 {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
                 {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
               </button>
-              
+
               <button onClick={() => { setShowResumeModal(true); setMobileMenuOpen(false); }} className="btn-outline" style={{ flex: 1 }}>
                 <FileText size={18} /> Resume
               </button>
@@ -247,19 +247,9 @@ function App() {
           <div className="content-wrapper">
             <div className="hero-grid">
               <div className="hero-text">
-                <div className="hero-badge">
-                  <span className="badge-tag">
-                    <Sparkles size={14} /> Open for Software Engineering Internships
-                  </span>
-                </div>
-
-                <h1 className="hero-title">
-                  Building Scalable Web Apps & <span className="gradient-text">Smart IoT Systems</span>
-                </h1>
-
-                <p className="hero-subtitle">
+                <h1 className="hero-subtitle">
                   Hi, I'm <strong>Nikhil Roule</strong> — B.Tech Computer Science & Engineering Student at MGM University.
-                </p>
+                </h1>
 
                 <p className="hero-description">
                   Passionate Full-Stack Developer and IoT Engineer with hands-on experience in React.js, TypeScript, Go, Firebase, and embedded hardware controllers (ESP8266). Focused on engineering performant, secure, and user-friendly digital solutions.
