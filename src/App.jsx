@@ -124,7 +124,7 @@ function App() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
-          access_key: 'b1704e54-52d3-4638-963d-4c3e8006e8b4', // Web3Forms access key
+          access_key: '055501da-0892-408a-b13c-1d6d8e701f7d', // Web3Forms access key for nikhilrofficial123@gmail.com
           name: formData.name,
           email: formData.email,
           subject: formData.subject || `New Portfolio Message from ${formData.name}`,
